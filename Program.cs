@@ -9,7 +9,7 @@ int ReadInt(string argument)
     int i;
     while (!int.TryParse(Console.ReadLine(), out i))
     {
-        System.Console.WriteLine("Это не число!");
+        Console.WriteLine("Это не число!");
         Console.Write(argument);
     }
     return i;
@@ -21,7 +21,7 @@ string NumbersRec1(int m, int n)
 }
 int m = ReadInt("Введите M: ");
 int n = ReadInt("Введите N: ");
-System.Console.WriteLine(NumbersRec1(m, n));
+Console.WriteLine(NumbersRec1(m, n));
 
    
 
